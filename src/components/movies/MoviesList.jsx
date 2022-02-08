@@ -78,6 +78,17 @@ export default function MoviesList() {
       title: 'Cruella',
       year: '2021',
     },
+    {
+      categories: ['Accion', 'Aventura'],
+      synopsis:
+        'James Bond el agente 007 ha dejado el servicio activo y disfruta de una vida tranquila en Jamaica. Su paz es efímera cuando su viejo amigo Félix Leiter de la CIA aparece pidiendo ayuda. La misión de rescatar a un científico secuestrado resulta ser mucho más traicionera de lo esperado, llevando a Bond a la pista de un misterioso villano armado con nueva tecnología peligrosa.',
+      id: '8',
+      image:
+        'https://m.media-amazon.com/images/M/MV5BYWQ2NzQ1NjktMzNkNS00MGY1LTgwMmMtYTllYTI5YzNmMmE0XkEyXkFqcGdeQXVyMjM4NTM5NDY@._V1_.jpg',
+      stars: 4,
+      title: 'No TIme to Die',
+      year: '2021',
+    },
   ];
   return (
     <>
