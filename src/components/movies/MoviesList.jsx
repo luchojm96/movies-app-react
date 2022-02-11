@@ -1,11 +1,14 @@
-import { Grid } from '../../styles/layout/Grid.styled';
-import MovieCard from './MovieCard';
-import myMovies from '../../assets/movies.json';
+import { useContext } from "react";
+import { MoviesContext } from "../../contexts/MoviesContext";
+import { Grid } from "../../styles/layout/Grid.styled";
+import MovieCard from "./MovieCard";
 
 export default function MoviesList() {
+  const { movies } = useContext(MoviesContext);
+
   return (
     <Grid>
-      {myMovies.map((movie) => (
+      {movies.map((movie) => (
         <MovieCard key={movie.id} movie={movie} />
       ))}
     </Grid>

@@ -1,14 +1,14 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import Layout from './components/layout/Layout';
-import Detail from './pages/Detail';
-import Home from './pages/Home';
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Layout from "./components/layout/Layout";
+import Detail from "./pages/Detail";
+import Home from "./pages/Home";
 
 export default function App() {
   return (
     <BrowserRouter>
       <Routes>
         <Route
-          path={'/'}
+          path={"/"}
           element={
             <Layout>
               <Home />
@@ -16,7 +16,7 @@ export default function App() {
           }
         />
         <Route
-          path={'/detail/:id'}
+          path={"/detail/:id"}
           element={
             <Layout>
               <Detail />
